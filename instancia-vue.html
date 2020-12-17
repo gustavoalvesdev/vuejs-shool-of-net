@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School of Net - Instância Vue</title>
 </head>
-<body>
-    
+<body>  
 
+    <div id="app">
+        {{ 'Gustavo Alves' }}
+        <input type="text" v-model="variavel">
+        {{ variavel }}
+    </div>
+    <!-- app -->
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                variavel : ''
+            }
+        })
+    </script>
 </body>
 </html>
